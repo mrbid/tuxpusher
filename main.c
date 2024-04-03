@@ -780,21 +780,39 @@ void main_loop()
 
 #ifndef BUILD_GLFW
 
-    // Cursor icon switching based on the mouse position. 
-    // Have a cross while over the playing field.
-    switch (cursor_state) 
+    // // Cursor icon switching based on the mouse position. 
+    // // Have a cross while over the playing field.
+    // switch (cursor_state) 
+    // {
+    //     case 0:
+    //         if (mx <= ww-touch_margin+1.f && mx >= touch_margin-1.f)
+    //             break;
+    //         SDL_SetCursor(beam_cursor);
+    //         cursor_state = 1;
+    //         break;
+    //     case 1:
+    //         if (mx > touch_margin && mx < ww-touch_margin) 
+    //             SDL_SetCursor(cross_cursor);
+    //             cursor_state = 0;
+    //         break;
+    // }
+
+    // reverting this bit of code due to a bug
+    
+    if(cursor_state == 0 && mx < touch_margin-1.f)
     {
-        case 0:
-            if (mx <= ww-touch_margin+1.f && mx >= touch_margin-1.f)
-                break;
-            SDL_SetCursor(beam_cursor);
-            cursor_state = 1;
-            break;
-        case 1:
-            if (mx > touch_margin && mx < ww-touch_margin) 
-                SDL_SetCursor(cross_cursor);
-                cursor_state = 0;
-            break;
+        SDL_SetCursor(beam_cursor);
+        cursor_state = 1;
+    }
+    else if(cursor_state == 0 && mx > ww-touch_margin+1.f)
+    {
+        SDL_SetCursor(beam_cursor);
+        cursor_state = 1;
+    }
+    else if(cursor_state == 1 && mx > touch_margin && mx < ww-touch_margin)
+    {
+        SDL_SetCursor(cross_cursor);
+        cursor_state = 0;
     }
     
 #endif
