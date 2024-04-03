@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<application>
-	<id type="desktop">tuxpusher.desktop</id>
+<component type="desktop-application">
+	<id type="desktop">com.tuxpusher.TuxPusher</id>
 	<metadata_license>CC-BY-4.0</metadata_license>
 	<project_license>GPL-2.0-only</project_license>
+	<developer_name>James William Fletcher</developer_name>
+	<launchable type="desktop-id">com.tuxpusher.TuxPusher.desktop</launchable>
 	<name>TuxPusher</name>
-	<summary>A fun coin pusher game featuring Tux!</summary>
+	<summary>Coin pusher game featuring Tux</summary>
 	<description>
 		<p>Gotta pocket 'em all, Linux Tux! Push the 6 unique Tux figurines into the gold and silver pockets at the end of the pitch before you run out of gold and silver coins! It's always a gamble, and your starting hand is make or break!</p>
 		<p>Game mechanics that will serve you well to know and use to your advantage.</p>
@@ -23,16 +25,30 @@
 		<p>There is a command line option that allows you to set the coin deployment speed, but also every time you "lose" a game, the new round will start with a faster deployment speed than the last, just to keep things exciting. ;)</p>
 	</description>
 	<screenshots>
-		<screenshot><video>https://youtu.be/39AIfMu2cYA</video></screenshot>
-		<screenshot>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Screenshot_2023-01-24_23-57-35.png</screenshot>
-		<screenshot>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Untitled-2.jpg</screenshot>
-		<screenshot>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Screenshot_2023-01-24_18-52-33_AhoTnw2.png</screenshot>
-		<screenshot>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Screenshot_2023-01-24_18-41-17.png</screenshot>
-		<screenshot>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Screenshot_2023-01-10_04-47-58.png</screenshot>
+		<screenshot type="default">
+			<image>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Screenshot_2023-01-24_23-57-35.png</image>
+			<caption>TuxPusher Screenshot</caption>
+		</screenshot>
+		<screenshot type="default">
+			<image>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Untitled-2.jpg</image>
+			<caption>TuxPusher Screenshot</caption>
+		</screenshot>
+		<screenshot type="default">
+			<image>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Screenshot_2023-01-24_18-52-33_AhoTnw2.png</image>
+			<caption>TuxPusher Screenshot</caption>
+		</screenshot>
+		<screenshot type="default">
+			<image>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Screenshot_2023-01-24_18-41-17.png</image>
+			<caption>TuxPusher Screenshot</caption>
+		</screenshot>
+		<screenshot type="default">
+			<image>https://dashboard.snapcraft.io/site_media/appmedia/2023/01/Screenshot_2023-01-10_04-47-58.png</image>
+			<caption>TuxPusher Screenshot</caption>
+		</screenshot>
 	</screenshots>
 	<url type="homepage">https://github.com/mrbid/TuxPusher</url>
 	<releases>
 		<release version="1.3.3.1" date="2023-07-10" />
 	</releases>
 	<content_rating type="oars-1.0" />
-</application>
+</component>
