@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-	<id type="desktop">com.tuxpusher.TuxPusher</id>
+	<id>com.tuxpusher.TuxPusher</id>
 	<metadata_license>CC-BY-4.0</metadata_license>
 	<project_license>GPL-2.0-only</project_license>
 	<developer_name>James William Fletcher</developer_name>
